@@ -1,0 +1,107 @@
+@media only screen and (max-width: 768px){
+	.project-wrapper .item{
+		width: 8rem !important;
+		height: 8rem !important;
+	}
+
+
+	#sidebar{
+		width: 40vw !important;
+		height: 100% !important;
+	}
+
+	#contact{
+		font-size: 1rem !important;
+	}
+
+
+	.mydetails{
+		padding: 0;
+		width: 50vw !important;
+	}
+
+
+	.myimage{
+		width: 50vw !important;
+	}
+
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+	#sidebar{
+		display: none;
+	}
+
+	#project{
+		flex-direction: column;
+	}
+
+	#intro{
+		padding: 1rem !important;
+		flex-direction: column;
+	}
+
+
+	#intro .details{
+		width: 100%;
+		margin: 1rem;
+		padding: 0.3rem;
+	}
+
+	
+	.education-wrapper{
+		width: 100% !important;
+	}
+
+
+	#contact{
+		min-height: 50vh !important;
+		padding: 0 1rem;
+		font-size: 1rem !important;
+	}
+
+
+	.contact-container{
+		padding: 1rem !important;
+	}
+
+
+	.contact-container .wrapper{
+		padding: 0.5rem !important;
+	}
+
+
+	.contact-container .wrapper .text{
+    	margin-left: 0.2rem;
+	}
+
+	.contact-container .wrapper .contact-icon{
+    	margin-right: 0.2rem;
+	}
+
+
+	.hero-container{
+		flex-direction: column;
+	}
+
+	.mydetails{
+		text-align: center;
+		padding: 3rem !important;
+		width: 100% !important;
+	}
+
+
+	.myimage{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+
+	.open-icon{
+		display: none;
+	}
+}

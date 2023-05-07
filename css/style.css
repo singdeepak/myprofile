@@ -1,0 +1,402 @@
+/*1) **************RESET CSS****************/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+ html,body{
+    font-family: 'Nunito', sans-serif;
+ }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --blue : #3262A8;
+    --black : #1B1B1B;
+    --yellow : #FFFF00;
+    --white : #FFFFFF;
+}
+
+/*2) **************CONTAINER CSS****************/
+.container{
+    display: flex;
+}
+
+
+
+/*3) **************SIDEBAR CSS****************/
+#sidebar{
+    width: 20vw;
+    height: 100vh;
+    top: 0;
+    padding: 1rem;
+    position: fixed;
+    border-right: 0.1px solid var(--white);
+    background-color: var(--black);
+}
+
+
+#close-icon{
+    color: #ffffff;
+    right: 1rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+}
+
+
+
+#sidebar.active{
+    animation: slide-in 0.3s ease-in-out;
+}
+
+
+#sidebar:not(.active){
+    animation: slide-out 0.3s ease-in-out forwards;
+}
+
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes slide-out {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#sidebar .myname{
+    font-size: 2em;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+
+#sidebar .myname::after{
+    content : '';
+    display: block;
+    width: 10vw;
+    height: 0.1px;
+    margin: 1rem  auto;
+    text-align: center;
+    background-color: yellow;
+}
+
+
+.navbar .nav-link{
+    color: var(--white);
+    display: block;
+    padding: 0.8rem;
+    margin-bottom: 7px;
+    background-color: var(--blue);
+    transition: all 0.5s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-decoration: none;
+}
+
+
+
+.navbar .nav-link:hover{
+    background-color: #0099cc;
+}
+
+
+/*4) **************MAIN-SECTION CSS****************/
+#main{
+    width: 100%; 
+    min-height: 100vh;
+    background-color: #000;
+}
+
+
+.open-icon i{
+    color: #fdfdfd;
+    cursor: pointer;
+    font-size: 2rem;
+    top: 1rem;
+    left: 1rem;
+    position: fixed;
+}
+
+
+.hero-container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mydetails{
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    margin-right: 0.5rem;
+/*    background-color: red;*/
+}
+
+
+
+.mydetails .salutation{
+    font-size: 3rem;
+    color: var(--yellow);
+    font-weight: normal;
+}
+
+
+
+
+.mydetails .myname{
+    color: var(--yellow);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+.mydetails .myrole{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0.7rem 0;
+    color: var(--yellow);
+    letter-spacing: 0.2rem;
+}
+
+
+
+.mydetails .description{
+    color: var(--yellow);
+    margin: 1rem 0;
+}
+
+
+
+
+.mydetails .btn1{
+    padding: 1rem;
+    color: var(--white);
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.2rem;
+    border-radius: 0.4rem;
+    transition: all 0.5s ease;
+    background-color: var(--blue);
+}
+
+
+
+.mydetails .btn2{
+    padding: 1rem;
+    margin: 0.2rem;
+    color: var(--white);
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: all 0.5s ease;
+    background-color: var(--blue);
+}
+
+
+
+.mydetails .btn1:hover, .btn2:hover{
+    background-color: #0099cc;
+}
+
+
+.myimage{
+    width: 40%;
+    height: 100vh;
+    margin-left: 0.5rem;
+}
+
+
+.myimage .hero{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*4) **************INTRO CSS****************/
+
+#intro{
+    background-color: var(--blue);
+    min-height: 100vh;
+    display: flex;
+    padding: 1rem 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.details{
+    margin-right: 0.5rem;
+    width: calc(100%/2);
+    background-color: #000;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+
+.details .wrapper{
+    padding: 1rem;
+}
+
+
+.details .wrapper .key{
+    color: var(--white);
+}
+
+.details .wrapper .value{
+    color: var(--yellow);
+}
+
+
+
+.education-wrapper{
+    width: calc(100%/2);
+    margin-left: 0.5rem;
+    background-color: #000;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+.course-item{
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: var(--black);
+}
+
+
+.course-item .wrapper{
+    margin: 0.5rem;
+}
+
+
+.course-item .wrapper .title{
+    color: var(--white);
+}
+
+
+.course-item .wrapper .value{
+    color: var(--yellow);
+}
+
+
+/*5) **************PROJECT CSS****************/
+
+#project{
+    background-color: #000;
+    min-height: 100vh;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project-wrapper .item{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    margin: 2rem;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-wrapper .item a{
+    padding: 100%;
+    font-size: 1.3rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+.project-wrapper .item:hover{
+    box-shadow: 0 4px 4px rgba(255 , 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+/*6) **************CONTACT CSS****************/
+
+#contact{
+    background-color: var(--blue);
+    min-height: 100vh;
+    display: flex;
+    font-size: 2rem;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact-container{
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(255 , 255, 255, 0.8);
+    background-color: #000;
+}
+
+
+
+.contact-container .wrapper{
+    padding: 2rem;
+}
+
+
+.contact-container .wrapper .contact-icon{
+    margin-right: 0.5rem;
+}
+
+.contact-container .wrapper .contact-icon i{
+    color: var(--yellow);
+}
+
+
+.contact-container .wrapper .text{
+    margin-left: 0.5rem;
+}
