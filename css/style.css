@@ -113,8 +113,8 @@ html{
     margin-bottom: 7px;
     background-color: var(--blue);
     transition: all 0.5s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 
@@ -170,10 +170,11 @@ html{
 
 
 
-.mydetails .myname{
+.mydetails #myname{
     color: var(--yellow);
     font-size: 3rem;
     font-weight: 600;
+    margin: 2rem 0;
 }
 
 
@@ -192,6 +193,8 @@ html{
 .mydetails .description{
     color: var(--yellow);
     margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 
