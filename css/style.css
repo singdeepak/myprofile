@@ -172,7 +172,7 @@ html{
 
 .mydetails #myname{
     color: var(--yellow);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 2rem 0;
 }
@@ -181,7 +181,7 @@ html{
 
 
 .mydetails .myrole{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     margin: 0.7rem 0;
     color: var(--yellow);
